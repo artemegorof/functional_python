@@ -1,24 +1,32 @@
 Тест 1:
 Входные данные:
-print(get_reverse("I am testing string"))
+print(is_palindrome("Never Odd or Even")) 
 
 Ожидаемый вывод:
-gnirts gnitset ma I
+True
 ------------------------------
 
 Тест 2:
 Входные данные:
-print(get_reverse("It's cool, isn't it?"))
+print(is_palindrome("abc"))
 
 Ожидаемый вывод:
-?ti t'nsi ,looc s'tI
+False
 ------------------------------
 
 Тест 3:
 Входные данные:
-print(get_reverse("Hello, my friend"))
+print(is_palindrome("kayak"))
 
 Ожидаемый вывод:
-dneirf ym ,olleH
+True
+------------------------------
+
+Тест 4:
+Входные данные:
+print(is_palindrome("KayAk"))
+
+Ожидаемый вывод:
+True
 ------------------------------
 

@@ -1,24 +1,26 @@
 Тест 1:
 Входные данные:
-print(generate_n_chars(5, "x"))
+print(create_palindrome('Rotator'))
+
 
 Ожидаемый вывод:
-xxxxx
+rotator
+
 ------------------------------
 
 Тест 2:
 Входные данные:
-print(generate_n_chars(10, "*"))
+print(create_palindrome('Hello'))
 
 Ожидаемый вывод:
-**********
+hello_i_olleh
 ------------------------------
 
 Тест 3:
 Входные данные:
-print(generate_n_chars(2, "!"))
+print(create_palindrome('kAyaK'))
 
 Ожидаемый вывод:
-!!
+kayak
 ------------------------------
 

@@ -1,0 +1,24 @@
+Тест 1:
+Входные данные:
+print(get_reverse("I am testing string"))
+
+Ожидаемый вывод:
+gnirts gnitset ma I
+------------------------------
+
+Тест 2:
+Входные данные:
+print(get_reverse("It's cool, isn't it?"))
+
+Ожидаемый вывод:
+?ti t'nsi ,looc s'tI
+------------------------------
+
+Тест 3:
+Входные данные:
+print(get_reverse("Hello, my friend"))
+
+Ожидаемый вывод:
+dneirf ym ,olleH
+------------------------------
+

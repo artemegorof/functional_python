@@ -1,0 +1,67 @@
+Тест 1:
+Входные данные:
+@delete_short
+def info_kwargs(**kwargs):
+    """Выводит информацию о переданных kwargs"""
+    for k, v in sorted(kwargs.items()):
+        print(f'{k} = {v}')
+
+info_kwargs(first_name="John", last_name="Doe", age=33)
+
+
+Ожидаемый вывод:
+first_name = John
+last_name = Doe
+------------------------------
+
+Тест 2:
+Входные данные:
+@filter_even
+def concatenate(*args):
+    result = ""
+    for arg in args:
+        result += arg
+    return result
+
+print(concatenate("Ну", "Когда", "Уже", "Я", "Выучу", "Питон?"))
+
+Ожидаемый вывод:
+НуПитон?
+------------------------------
+
+Тест 3:
+Входные данные:
+@filter_even
+@delete_short
+def concatenate(*args, **kwargs):
+    result = ""
+    for arg in args + tuple(kwargs.values()):
+        result += str(arg)
+    return result
+
+
+print(concatenate("Я", "хочу", "Выучить", "Питон", a="За", qwerty=10, c="Месяцев"))
+
+
+Ожидаемый вывод:
+хочу10
+------------------------------
+
+Тест 4:
+Входные данные:
+@filter_even
+@delete_short
+def concatenate(*args, **kwargs):
+    result = ""
+    for arg in args + tuple(kwargs.values()):
+        result += str(arg)
+    return result
+
+
+print(concatenate([1], [1, 2], {1:1, 2:2}, {1:1}, a="За", qwer=10, ccccc="Месяцев"))
+
+
+Ожидаемый вывод:
+[1, 2]{1: 1, 2: 2}Месяцев
+------------------------------
+

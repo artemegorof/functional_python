@@ -1,0 +1,54 @@
+Тест 1:
+Входные данные:
+@double_it
+def multiply(num1, num2):
+    return num1 * num2
+    
+res = multiply(9, 4) # произведение 9*4=36, но декоратор double_it удваивает это значение
+print(res)
+
+
+Ожидаемый вывод:
+72
+------------------------------
+
+Тест 2:
+Входные данные:
+@double_it
+def get_sum(*args):
+    return sum(args)
+
+res = get_sum(1, 2, 3, 4, 5)
+print(res) # сумму 15 увеличивает в 2 раза
+
+Ожидаемый вывод:
+30
+------------------------------
+
+Тест 3:
+Входные данные:
+@double_it
+def calculate(a, b, c):
+    return a ** b + c
+
+print(calculate(4, 5, 4))
+
+Ожидаемый вывод:
+2056
+------------------------------
+
+Тест 4:
+Входные данные:
+@double_it
+def get_sum_kwargs_values(**kwargs):
+    return sum(kwargs.values())
+
+
+print(get_sum_kwargs_values(a=4, b=5, c=7))
+print(get_sum_kwargs_values(a=4, b=5, d=3, t=6, r=8))
+
+Ожидаемый вывод:
+32
+52
+------------------------------
+

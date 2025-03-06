@@ -1,0 +1,36 @@
+Тест 1:
+Входные данные:
+@uppercase_elements
+def my_func():
+    return ['monarch', 'Touch', 'officiaL', 'DangerouS', 'breathe']
+
+print(my_func())
+
+Ожидаемый вывод:
+['MONARCH', 'TOUCH', 'OFFICIAL', 'DANGEROUS', 'BREATHE']
+------------------------------
+
+Тест 2:
+Входные данные:
+@uppercase_elements
+def my_func(name, surname):
+    return ['temple', 'store', name, surname, *[1, 2, 3]]
+
+print(my_func('Gerard', 'Pique'))
+
+Ожидаемый вывод:
+['TEMPLE', 'STORE', 'GERARD', 'PIQUE', 1, 2, 3]
+------------------------------
+
+Тест 3:
+Входные данные:
+@uppercase_elements
+def my_func(**kwargs):
+    return {1: 'one', 2: 'store', 'three': 3, 'four': 4} | kwargs
+
+print(my_func(**{'Five': 5, 'sIx': 6}))
+
+Ожидаемый вывод:
+{1: 'one', 2: 'store', 'THREE': 3, 'FOUR': 4, 'FIVE': 5, 'SIX': 6}
+------------------------------
+

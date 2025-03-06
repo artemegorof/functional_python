@@ -1,0 +1,30 @@
+Тест 1:
+Входные данные:
+add(1, 4)
+
+Ожидаемый вывод:
+---Start calculation---
+---Finish calculation. Result is 5---
+------------------------------
+
+Тест 2:
+Входные данные:
+add(100, 24)
+
+Ожидаемый вывод:
+---Start calculation---
+---Finish calculation. Result is 124---
+------------------------------
+
+Тест 3:
+Входные данные:
+add(10, 20)
+add(50, 7)
+
+Ожидаемый вывод:
+---Start calculation---
+---Finish calculation. Result is 30---
+---Start calculation---
+---Finish calculation. Result is 57---
+------------------------------
+

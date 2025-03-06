@@ -1,0 +1,42 @@
+Тест 1:
+Входные данные:
+@convert_to(int)
+def add_values(a, b):
+    return a + b
+
+
+result = add_values(10, 20)
+print(f"Результат: {result}, тип результата {type(result)}")
+
+Ожидаемый вывод:
+Результат: 30, тип результата <class 'int'>
+------------------------------
+
+Тест 2:
+Входные данные:
+@convert_to(str)
+def add_values(a, b):
+    return a + b
+
+
+result = add_values(10, 20)
+print(f"Результат: {result}, тип результата {type(result)}")
+
+Ожидаемый вывод:
+Результат: 30, тип результата <class 'str'>
+------------------------------
+
+Тест 3:
+Входные данные:
+@convert_to(list)
+def add_values(a, b):
+    return a + b
+
+
+result = add_values('hello', 'world')
+print(f"Результат: {result}, тип результата {type(result)}")
+
+Ожидаемый вывод:
+Результат: ['h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd'], тип результата <class 'list'>
+------------------------------
+

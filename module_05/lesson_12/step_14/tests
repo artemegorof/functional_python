@@ -1,0 +1,36 @@
+Тест 1:
+Входные данные:
+@add_attrs(test=True, ordered=True)
+def add(a, b):
+    return a + b
+
+print(add(10, 5))
+print(add.test)
+print(add.ordered)
+
+Ожидаемый вывод:
+15
+True
+True
+------------------------------
+
+Тест 2:
+Входные данные:
+@add_attrs(hello='World', marks=[1, 2, 3], cash=100)
+def add(a, b):
+    return a + b
+
+print(add(10, 5))
+print(add.hello)
+print(add.marks)
+print(add.cash)
+print(getattr(add, 'ordered', None))
+
+Ожидаемый вывод:
+15
+World
+[1, 2, 3]
+100
+None
+------------------------------
+

@@ -1,0 +1,46 @@
+Тест 1:
+Входные данные:
+def double_it(a):
+    return a * 2
+
+
+def increment(a):
+    return a + 1
+    
+@compose(double_it, increment)
+def get_sum(*args):
+    return sum(args)
+
+print(get_sum(5))
+print(get_sum(20, 10))
+print(get_sum(5, 15, 25))
+
+Ожидаемый вывод:
+11
+61
+91
+------------------------------
+
+Тест 2:
+Входные данные:
+def double_it(a):
+    return a * 2
+
+
+def increment(a):
+    return a + 1
+
+@compose(increment, increment, double_it)
+def get_sum(*args):
+    return sum(args)
+
+print(get_sum(5))
+print(get_sum(20, 10))
+print(get_sum(5, 15, 25))
+
+Ожидаемый вывод:
+14
+64
+94
+------------------------------
+

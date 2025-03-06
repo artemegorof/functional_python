@@ -1,0 +1,27 @@
+Тест 1:
+Входные данные:
+@multiply_result_by(2)
+def my_function(x, y):
+    return x + y
+    
+print(my_function(5, 6))
+
+Ожидаемый вывод:
+22
+
+------------------------------
+
+Тест 2:
+Входные данные:
+@multiply_result_by(3)
+@multiply_result_by(4)
+def my_function(x, y):
+    return x + y
+
+
+print(my_function(2, 3))
+
+Ожидаемый вывод:
+60
+------------------------------
+

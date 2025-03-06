@@ -1,0 +1,92 @@
+Тест 1:
+Входные данные:
+@check_count_args
+def add_numbers(x, y):
+    """Return sum of x and y"""
+    return x + y
+
+
+print(add_numbers(4, 5))
+print(add_numbers.__name__)
+print(add_numbers.__doc__.strip())
+
+Ожидаемый вывод:
+9
+add_numbers
+Return sum of x and y
+------------------------------
+
+Тест 2:
+Входные данные:
+@check_count_args
+def add_numbers(x, y):
+    """Return sum of x and y"""
+    return x + y
+
+
+print(add_numbers(6, y=7))
+print(add_numbers.__name__)
+print(add_numbers.__doc__.strip())
+
+Ожидаемый вывод:
+13
+add_numbers
+Return sum of x and y
+------------------------------
+
+Тест 3:
+Входные данные:
+@check_count_args
+def add_numbers(x, y):
+    """Return sum of x and y"""
+    return x + y
+
+add_numbers(4)
+
+Ожидаемый вывод:
+Not enough arguments
+------------------------------
+
+Тест 4:
+Входные данные:
+@check_count_args
+def add_numbers(x, y):
+    """Return sum of x and y"""
+    return x + y
+
+add_numbers(3, 5, 6)
+
+Ожидаемый вывод:
+Too many arguments
+------------------------------
+
+Тест 5:
+Входные данные:
+@check_count_args
+def add_numbers(x, y):
+    """Return sum of x and y"""
+    return x + y
+
+add_numbers()
+
+Ожидаемый вывод:
+Not enough arguments
+------------------------------
+
+Тест 6:
+Входные данные:
+@check_count_args
+def add_numbers(x, y):
+    """Return sum of x and y"""
+    return x + y
+
+print(add_numbers(x=906, y=7))
+print(add_numbers.__name__)
+print(add_numbers.__doc__.strip())
+
+Ожидаемый вывод:
+913
+add_numbers
+Return sum of x and y
+------------------------------
+

@@ -1,47 +1,48 @@
 Тест 1:
 Входные данные:
-@validate_all_args_str
-def concatenate(*args):
+@validate_all_kwargs_int_pos
+def concatenate(*args, **kwargs):
     result = ""
-    for arg in args:
-        result += arg
+    for arg in args + tuple(kwargs.values()):
+        result += str(arg)
     return result
 
 
-print(concatenate("Ну", "Когда", "Уже", "Я", "Выучу", "Питон?"))
+print(concatenate(a="i", b='Love', c="Python"))
 
 Ожидаемый вывод:
-НуКогдаУжеЯВыучуПитон?
+Все именованные аргументы должны быть положительными числами
+None
 
 ------------------------------
 
 Тест 2:
 Входные данные:
-@validate_all_args_str
-def concatenate(**kwargs):
+@validate_all_kwargs_int_pos
+def concatenate(*args, **kwargs):
     result = ""
-    for arg in kwargs.values():
+    for arg in args + tuple(kwargs.values()):
         result += str(arg)
     return result
 
 
-print(concatenate(a="Я", b="Выучу", c="Этот", d="Питон", e="!"))
+print(concatenate(a=10, b=20, c=50))
 
 Ожидаемый вывод:
-ЯВыучуЭтотПитон!
+102050
 ------------------------------
 
 Тест 3:
 Входные данные:
 @validate_all_args_str
-def concatenate(*args):
+@validate_all_kwargs_int_pos
+def concatenate(*args, **kwargs):
     result = ""
-    for arg in args:
-        result += arg
+    for arg in args + tuple(kwargs.values()):
+        result += str(arg)
     return result
 
-
-print(concatenate("Через", 9, "Месяцев"))
+print(concatenate('Hello', 2, 'World', a="i", b='Love', c="Python"))
 
 Ожидаемый вывод:
 Все аргументы должны быть строками
@@ -50,6 +51,7 @@ None
 
 Тест 4:
 Входные данные:
+@validate_all_kwargs_int_pos
 @validate_all_args_str
 def concatenate(*args, **kwargs):
     result = ""
@@ -57,16 +59,16 @@ def concatenate(*args, **kwargs):
         result += str(arg)
     return result
 
-
-print(concatenate("Я", "думаю", "Выучить", "Питон", a="За", b=10, c="Месяцев"))
+print(concatenate('Hello', 2, 'World', a="i", b='Love', c="Python"))
 
 Ожидаемый вывод:
-ЯдумаюВыучитьПитонЗа10Месяцев
+Все именованные аргументы должны быть положительными числами
+None
 ------------------------------
 
 Тест 5:
 Входные данные:
-@validate_all_args_str
+@validate_all_kwargs_int_pos
 def concatenate(*args, **kwargs):
     result = ""
     for arg in args + tuple(kwargs.values()):
@@ -74,42 +76,77 @@ def concatenate(*args, **kwargs):
     return result
 
 
-print(concatenate(a=10, b=20, c=30))
+print(concatenate(a=10, b=20, c="Python"))
 
 Ожидаемый вывод:
-102030
+Все именованные аргументы должны быть положительными числами
+None
 ------------------------------
 
 Тест 6:
 Входные данные:
 @validate_all_args_str
+@validate_all_kwargs_int_pos
 def concatenate(*args, **kwargs):
     result = ""
     for arg in args + tuple(kwargs.values()):
         result += str(arg)
     return result
 
-
-print(concatenate('Hello', 'World', a=10, b=20, c=30))
+print(concatenate('Hello', 'My', 'World', a="i", b='Love', c="Python"))
 
 Ожидаемый вывод:
-HelloWorld102030
+Все именованные аргументы должны быть положительными числами
+None
 ------------------------------
 
 Тест 7:
 Входные данные:
 @validate_all_args_str
+@validate_all_kwargs_int_pos
 def concatenate(*args, **kwargs):
     result = ""
     for arg in args + tuple(kwargs.values()):
         result += str(arg)
     return result
 
-
-print(concatenate('Hello', 2, 'World', a=10, b=20, c=30))
+print(concatenate('Hello', 'My', 'World', a=1, b=2, c=3))
 
 Ожидаемый вывод:
-Все аргументы должны быть строками
+HelloMyWorld123
+------------------------------
+
+Тест 8:
+Входные данные:
+@validate_all_args_str
+@validate_all_kwargs_int_pos
+def concatenate(*args, **kwargs):
+    result = ""
+    for arg in args + tuple(kwargs.values()):
+        result += str(arg)
+    return result
+
+print(concatenate('Hello', 'My', 'World', a=-1, b=2, c=3))
+
+Ожидаемый вывод:
+Все именованные аргументы должны быть положительными числами
+None
+------------------------------
+
+Тест 9:
+Входные данные:
+@validate_all_args_str
+@validate_all_kwargs_int_pos
+def concatenate(*args, **kwargs):
+    result = ""
+    for arg in args + tuple(kwargs.values()):
+        result += str(arg)
+    return result
+
+print(concatenate('Hello', 'My', 'World', a=False, b=2, c=3))
+
+Ожидаемый вывод:
+Все именованные аргументы должны быть положительными числами
 None
 ------------------------------
 

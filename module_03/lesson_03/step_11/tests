@@ -1,0 +1,51 @@
+Тест 1:
+Входные данные:
+print(is_pangram("The quick brown fox jumps over the lazy dog."))
+
+Ожидаемый вывод:
+True
+------------------------------
+
+Тест 2:
+Входные данные:
+print(is_pangram("Obviously not a pangram"))
+
+
+Ожидаемый вывод:
+False
+------------------------------
+
+Тест 3:
+Входные данные:
+print(is_pangram("How quickly daft jumping zebras vex!"))
+
+
+Ожидаемый вывод:
+True
+------------------------------
+
+Тест 4:
+Входные данные:
+print(is_pangram("The five boxing wizards jump quickly."))
+
+
+Ожидаемый вывод:
+True
+------------------------------
+
+Тест 5:
+Входные данные:
+print(is_pangram("Pack my box with five dozen liquor jugs."))
+
+Ожидаемый вывод:
+True
+------------------------------
+
+Тест 6:
+Входные данные:
+print(is_pangram("Pack my box"))
+
+Ожидаемый вывод:
+False
+------------------------------
+

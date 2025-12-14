@@ -1,0 +1,72 @@
+Тест 1:
+Входные данные:
+tables = {
+  1: 'Andrey',
+  2: None,
+  3: None,
+  4: None,
+  5: 'Vasiliy',
+  6: None,
+  7: None,
+  8: 'Stas',
+  9: None,
+}
+
+print(is_table_free(1))
+print(is_table_free(2))
+print(get_free_tables())
+
+Ожидаемый вывод:
+False
+True
+[2, 3, 4, 6, 7, 9]
+------------------------------
+
+Тест 2:
+Входные данные:
+tables = {
+  1: 'Andrey',
+  2: None,
+  3: 'Gena',
+  4: None,
+  5: 'Vasiliy',
+  6: 'Chubaka',
+  7: None,
+  8: 'Stas',
+  9: None,
+}
+
+print(is_table_free(5))
+print(is_table_free(6))
+print(get_free_tables())
+
+Ожидаемый вывод:
+False
+False
+[2, 4, 7, 9]
+------------------------------
+
+Тест 3:
+Входные данные:
+tables = {
+  1: 'Andrey',
+  2: 'Zhora',
+  3: 'Gena',
+  4: 'Artem',
+  5: 'Vasiliy',
+  6: 'Chubaka',
+  7: 'Artur',
+  8: 'Stas',
+  9: 'Misha',
+}
+
+print(is_table_free(8))
+print(is_table_free(9))
+print(get_free_tables())
+
+Ожидаемый вывод:
+False
+False
+[]
+------------------------------
+

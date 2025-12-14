@@ -1,0 +1,53 @@
+Тест 1:
+Входные данные:
+tables = {
+    1: {'name': 'Andrey', 'is_vip': True},
+    2: None,
+    3: None,
+    4: None,
+    5: {'name': 'Vasiliy', 'is_vip': False},
+    6: None,
+    7: None,
+    8: None,
+    9: None,
+}
+
+print(tables)
+reserve_table(3, 'Gena', True)
+reserve_table(4, 'Artem', False)
+reserve_table(5, 'Artur', True)  # Артур не должен занять место Василия
+print(tables)
+
+Ожидаемый вывод:
+{1: {'name': 'Andrey', 'is_vip': True}, 2: None, 3: None, 4: None, 5: {'name': 'Vasiliy', 'is_vip': False}, 6: None, 7: None, 8: None, 9: None}
+{1: {'name': 'Andrey', 'is_vip': True}, 2: None, 3: {'name': 'Gena', 'is_vip': True}, 4: {'name': 'Artem', 'is_vip': False}, 5: {'name': 'Vasiliy', 'is_vip': False}, 6: None, 7: None, 8: None, 9: None}
+
+------------------------------
+
+Тест 2:
+Входные данные:
+tables = {
+    1: {'name': 'Andrey', 'is_vip': True},
+    2: None,
+    3: None,
+    4: None,
+    5: {'name': 'Vasiliy', 'is_vip': False},
+    6: None,
+    7: None,
+    8: None,
+    9: None,
+}
+print(tables)
+delete_reservation(5)
+delete_reservation(4)
+reserve_table(9, 'Igor', False)
+reserve_table(8, 'Nika', False)
+reserve_table(7, 'Zhanna', False)
+print(tables)
+
+Ожидаемый вывод:
+{1: {'name': 'Andrey', 'is_vip': True}, 2: None, 3: None, 4: None, 5: {'name': 'Vasiliy', 'is_vip': False}, 6: None, 7: None, 8: None, 9: None}
+{1: {'name': 'Andrey', 'is_vip': True}, 2: None, 3: None, 4: None, 5: None, 6: None, 7: {'name': 'Zhanna', 'is_vip': False}, 8: {'name': 'Nika', 'is_vip': False}, 9: {'name': 'Igor', 'is_vip': False}}
+
+------------------------------
+

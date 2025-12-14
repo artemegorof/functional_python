@@ -1,0 +1,17 @@
+Тест 1:
+Входные данные:
+print(translate_to_robber_lang("This is kinda fun"))
+
+Ожидаемый вывод:
+ToThohisos isos kokinondoda fofunon
+
+------------------------------
+
+Тест 2:
+Входные данные:
+print(translate_to_robber_lang("I Think YoU Might BE righT!"))
+
+Ожидаемый вывод:
+I ToThohinonkok YoYoU MoMigoghohtot BoBE rorigoghohToT!
+------------------------------
+

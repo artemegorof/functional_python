@@ -1,0 +1,26 @@
+Тест 1:
+Входные данные:
+add_item("Bread")
+add_item("Milk", 2)
+print(shopping_list)
+
+Ожидаемый вывод:
+{'Bread': 1, 'Milk': 2}
+------------------------------
+
+Тест 2:
+Входные данные:
+add_item("Bread", 10)
+add_item("Potato", 5)
+add_item("Milk")
+add_item("Orange", 3)
+add_item("Orange", 2)
+add_item("Milk")
+add_item("Bread", 3)
+
+print(shopping_list)
+
+Ожидаемый вывод:
+{'Bread': 13, 'Potato': 5, 'Milk': 2, 'Orange': 5}
+------------------------------
+

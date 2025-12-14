@@ -1,0 +1,34 @@
+Тест 1:
+Входные данные:
+shopping_list = {'Bread': 13, 'Potato': 5, 'Milk': 2, 'Orange': 5}
+show_list()
+
+Ожидаемый вывод:
+13xBread
+5xPotato
+2xMilk
+5xOrange
+------------------------------
+
+Тест 2:
+Входные данные:
+shopping_list = {'Bread': 13, 'Potato': 5, 'Milk': 2, 'Orange': 5}
+show_list(include_quantities=False)
+
+Ожидаемый вывод:
+Bread
+Potato
+Milk
+Orange
+------------------------------
+
+Тест 3:
+Входные данные:
+shopping_list = {'Bread': 1, 'Milk': 2}
+show_list(include_quantities=True)
+
+Ожидаемый вывод:
+1xBread
+2xMilk
+------------------------------
+

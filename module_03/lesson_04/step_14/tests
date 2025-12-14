@@ -1,0 +1,54 @@
+Тест 1:
+Входные данные:
+ivan = create_student('Ivan', 15)
+anatoliy = create_student('Anatoliy', 16)
+
+add_mark(ivan, 5)
+add_mark(ivan, 5)
+add_mark(anatoliy, 3)
+add_mark(anatoliy, 4)
+print(ivan['marks'])
+print(anatoliy['marks'])
+
+Ожидаемый вывод:
+[5, 5]
+[3, 4]
+------------------------------
+
+Тест 2:
+Входные данные:
+ivan = create_student('Ivan', 15, [3, 4, 5])
+anatoliy = create_student('Anatoliy', 16, [2])
+add_mark(ivan, 4)
+add_mark(ivan, 5)
+add_mark(anatoliy, 4)
+add_mark(anatoliy, 5)
+add_mark(anatoliy, 2)
+print(ivan['marks'])
+print(anatoliy['marks'])
+
+Ожидаемый вывод:
+[3, 4, 5, 4, 5]
+[2, 4, 5, 2]
+------------------------------
+
+Тест 3:
+Входные данные:
+ivan = create_student('Ivan', 15)
+anatoliy = create_student('Anatoliy', 16)
+
+add_mark(ivan, 5)
+add_mark(anatoliy, 2)
+add_mark(ivan, 4)
+add_mark(ivan, 5)
+add_mark(anatoliy, 4)
+add_mark(anatoliy, 5)
+add_mark(anatoliy, 1)
+print(ivan['marks'])
+print(anatoliy['marks'])
+
+Ожидаемый вывод:
+[5, 4, 5]
+[2, 4, 5, 1]
+------------------------------
+

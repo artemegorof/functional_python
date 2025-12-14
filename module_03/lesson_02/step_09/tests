@@ -1,0 +1,26 @@
+Тест 1:
+Входные данные:
+print(find_longest_word_len(['hello', 'world', 'Python', 'reserve']))
+
+Ожидаемый вывод:
+7
+
+------------------------------
+
+Тест 2:
+Входные данные:
+print(find_longest_word_len(['default', 'ghostwriter', 'bother', 'applaud', 'skate', 'way']))
+
+
+Ожидаемый вывод:
+11
+------------------------------
+
+Тест 3:
+Входные данные:
+print(find_longest_word_len(['brain', 'candle', 'rare', 'shy']))
+
+Ожидаемый вывод:
+6
+------------------------------
+

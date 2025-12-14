@@ -1,0 +1,29 @@
+Тест 1:
+Входные данные:
+people = {'Igor': 'yes', 'Stas': 'no', 'Peter': 'no', 'Mary': 'yes'}
+print(register_check(people))
+
+Ожидаемый вывод:
+2
+
+------------------------------
+
+Тест 2:
+Входные данные:
+people = {'Igor': 'no', 'Vasya': 'no', 'Peter': 'no', 'Mary': 'no'}
+print(register_check(people))
+
+Ожидаемый вывод:
+0
+------------------------------
+
+Тест 3:
+Входные данные:
+people = {'Igor': 'yes', 'Vasya': 'yes', 'Peter': 'yes',
+          'Mary': 'no', 'Alex': 'yes', 'Marina': 'yes'}
+print(register_check(people))
+
+Ожидаемый вывод:
+5
+------------------------------
+

@@ -1,0 +1,48 @@
+Тест 1:
+Входные данные:
+marks = [('English', 88), ('Science', 90), ('Maths', 97), ('Physics', 93), ('History', 82)]
+print_results(marks)
+
+Ожидаемый вывод:
+History 82
+English 88
+Science 90
+Physics 93
+Maths 97
+------------------------------
+
+Тест 2:
+Входные данные:
+marks = [('English', 88), ('Science', 100), ('Maths', 81),
+         ('Physics', 100), ('History', 82), ('Music', 100)]
+print_results(marks)
+
+Ожидаемый вывод:
+Maths 81
+History 82
+English 88
+Science 100
+Physics 100
+Music 100
+------------------------------
+
+Тест 3:
+Входные данные:
+marks = [('English', 88), ('Science', 90), ('Maths', 97),
+         ('Physics', 93), ('History', 82), ('French', 78),
+         ('Art', 58), ('Chemistry', 76), ('Programming', 91)]
+
+print_results(marks)
+
+Ожидаемый вывод:
+Art 58
+Chemistry 76
+French 78
+History 82
+English 88
+Science 90
+Programming 91
+Physics 93
+Maths 97
+------------------------------
+

@@ -1,0 +1,62 @@
+Тест 1:
+Входные данные:
+data = [
+    'Sony PlayStation 5: 46000',
+    'Телевизор QLED Samsung QE65Q60TAU: 87090',
+    'Смартфон Samsung Galaxy A11: 10000',
+    'Планшет Samsung Galaxy Tab S6: 26600',
+]
+
+print_goods(data)
+
+Ожидаемый вывод:
+87090.00 - Телевизор QLED Samsung QE65Q60TAU
+46000.00 - Sony PlayStation 5
+26600.00 - Планшет Samsung Galaxy Tab S6
+10000.00 - Смартфон Samsung Galaxy A11
+------------------------------
+
+Тест 2:
+Входные данные:
+data = [
+    'Sony PlayStation 5: 46000.5',
+    'Телевизор QLED Samsung QE65Q60TAU: 87090',
+    'Samsung Galaxy s23: 46000.5',
+    'siemens eq.6 plus s100: 46000.5',
+    'Samsung Galaxy Tab S6: 46000.5',
+]
+print_goods(data)
+
+Ожидаемый вывод:
+87090.00 - Телевизор QLED Samsung QE65Q60TAU
+46000.50 - Samsung Galaxy s23
+46000.50 - Samsung Galaxy Tab S6
+46000.50 - siemens eq.6 plus s100
+46000.50 - Sony PlayStation 5
+------------------------------
+
+Тест 3:
+Входные данные:
+data = [
+    'a: 1',
+    'aa: 2',
+    'aA: 3',
+    'Aa: 4',
+    'Aa: 5',
+    'AA: 5',
+    'aa: 5',
+    'aA: 5',
+]
+print_goods(data)
+
+Ожидаемый вывод:
+5.00 - Aa
+5.00 - AA
+5.00 - aa
+5.00 - aA
+4.00 - Aa
+3.00 - aA
+2.00 - aa
+1.00 - a
+------------------------------
+

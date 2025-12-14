@@ -1,0 +1,44 @@
+Тест 1:
+Входные данные:
+models = [{'make': 'Nokia', 'model': 216, 'color': 'Black'},
+          {'make': 'Mi Max', 'model': 2, 'color': 'Gold'},
+          {'make': 'Samsung', 'model': 7, 'color': 'Blue'},
+          {'make': 'Apple', 'model': 10, 'color': 'Silver'},
+          {'make': 'Oppo', 'model': 9, 'color': 'Red'},
+          {'make': 'Huawei', 'model': 4, 'color': 'Grey'},
+          {'make': 'Honor', 'model': 3, 'color': 'Black'}]
+print_goods(models)
+
+Ожидаемый вывод:
+Производитель: Nokia, модель: 216, цвет: Black
+Производитель: Honor, модель: 3, цвет: Black
+Производитель: Samsung, модель: 7, цвет: Blue
+Производитель: Mi Max, модель: 2, цвет: Gold
+Производитель: Huawei, модель: 4, цвет: Grey
+Производитель: Oppo, модель: 9, цвет: Red
+Производитель: Apple, модель: 10, цвет: Silver
+------------------------------
+
+Тест 2:
+Входные данные:
+models = [{'make': 'Nokia', 'model': 2, 'color': 'Black'},
+          {'make': 'Mi Max', 'model': 3, 'color': 'red'},
+          {'make': 'Samsung', 'model': 5, 'color': 'Yellow'},
+          {'make': 'Apple', 'model': 10, 'color': 'RED'},
+          {'make': 'Oppo', 'model': 9, 'color': 'Red'},
+          {'make': 'Huawei', 'model': 4, 'color': 'BLACK'},
+          {'make': 'Honor', 'model': 3, 'color': 'black'},
+          {'make': 'Nothing Phone', 'model': 7, 'color': 'Yellow'}]
+print_goods(models)
+
+Ожидаемый вывод:
+Производитель: Huawei, модель: 4, цвет: BLACK
+Производитель: Honor, модель: 3, цвет: black
+Производитель: Nokia, модель: 2, цвет: Black
+Производитель: Apple, модель: 10, цвет: RED
+Производитель: Oppo, модель: 9, цвет: Red
+Производитель: Mi Max, модель: 3, цвет: red
+Производитель: Nothing Phone, модель: 7, цвет: Yellow
+Производитель: Samsung, модель: 5, цвет: Yellow
+------------------------------
+

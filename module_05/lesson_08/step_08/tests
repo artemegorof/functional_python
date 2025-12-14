@@ -1,0 +1,46 @@
+Тест 1:
+Входные данные:
+summator_1 = create_accumulator()
+print(summator_1(5))
+print(summator_1(7))
+print(summator_1(2))
+
+summator_2 = create_accumulator()
+print(summator_2(3))
+print(summator_2(6))
+
+Ожидаемый вывод:
+5
+12
+14
+3
+9
+------------------------------
+
+Тест 2:
+Входные данные:
+closure = create_accumulator()
+
+print(closure(4))
+print(closure(400))
+print(closure(4.5))
+print(closure(0.5))
+
+closure_2 = create_accumulator()
+
+print(closure_2(0))
+print(closure_2(1))
+print(closure_2(3))
+print(closure_2(7))
+
+Ожидаемый вывод:
+4
+404
+408.5
+409.0
+0
+1
+4
+11
+------------------------------
+

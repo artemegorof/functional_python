@@ -1,0 +1,48 @@
+Тест 1:
+Входные данные:
+f_1 = create_dict()
+print(f_1('privet'))
+print(f_1('poka'))
+print(f_1([5, 2, 3]))
+
+f2 = create_dict()
+print(f2(5))
+print(f2(15))
+
+Ожидаемый вывод:
+{1: 'privet'}
+{1: 'privet', 2: 'poka'}
+{1: 'privet', 2: 'poka', 3: [5, 2, 3]}
+{1: 5}
+{1: 5, 2: 15}
+
+------------------------------
+
+Тест 2:
+Входные данные:
+closure = create_dict()
+print(closure(4))
+print(closure(400))
+print(closure(4.5))
+print(closure('dad'))
+
+closure_2 = create_dict()
+print(closure_2((1, 2, 3)))
+print(closure_2('TreX'))
+print(closure_2(4.5)) 
+print(closure_2('WoW'))
+print(closure_2({1, 2, 2, 3}))
+
+Ожидаемый вывод:
+{1: 4}
+{1: 4, 2: 400}
+{1: 4, 2: 400, 3: 4.5}
+{1: 4, 2: 400, 3: 4.5, 4: 'dad'}
+{1: (1, 2, 3)}
+{1: (1, 2, 3), 2: 'TreX'}
+{1: (1, 2, 3), 2: 'TreX', 3: 4.5}
+{1: (1, 2, 3), 2: 'TreX', 3: 4.5, 4: 'WoW'}
+{1: (1, 2, 3), 2: 'TreX', 3: 4.5, 4: 'WoW', 5: {1, 2, 3}}
+
+------------------------------
+

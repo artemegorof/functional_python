@@ -1,0 +1,57 @@
+Тест 1:
+Входные данные:
+print(get_first_repeated_word.__doc__)
+print(get_first_repeated_word.__annotations__)
+print(get_first_repeated_word(['hello', 'hi', 'hello']))
+
+Ожидаемый вывод:
+Находит первый дубль в списке
+{'words': typing.List[str], 'return': typing.Optional[str]}
+hello
+------------------------------
+
+Тест 2:
+Входные данные:
+print(get_first_repeated_word.__doc__)
+print(get_first_repeated_word.__annotations__)
+print(get_first_repeated_word(['hello', 'hi', 'Hello']))
+
+Ожидаемый вывод:
+Находит первый дубль в списке
+{'words': typing.List[str], 'return': typing.Optional[str]}
+None
+------------------------------
+
+Тест 3:
+Входные данные:
+print(get_first_repeated_word(['ab', 'ca', 'bc', 'ab']))
+
+Ожидаемый вывод:
+ab
+------------------------------
+
+Тест 4:
+Входные данные:
+print(get_first_repeated_word(['ab', 'ca', 'bc', 'Ab', 'cA', 'aB', 'bc']))
+
+Ожидаемый вывод:
+bc
+------------------------------
+
+Тест 5:
+Входные данные:
+print(get_first_repeated_word(['ab', 'ca', 'bc', 'ca', 'ab', 'bc']))
+
+Ожидаемый вывод:
+ca
+------------------------------
+
+Тест 6:
+Входные данные:
+print(get_first_repeated_word(['ab', 'ca', 'bc']))
+
+
+Ожидаемый вывод:
+None
+------------------------------
+

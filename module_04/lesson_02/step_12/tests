@@ -1,0 +1,20 @@
+Тест 1:
+Входные данные:
+print(is_leap.__annotations__)
+
+Ожидаемый вывод:
+{'year': <class 'int'>, 'return': <class 'bool'>}
+------------------------------
+
+Тест 2:
+Входные данные:
+print(is_leap.__annotations__)
+print(is_leap(2004))
+print(is_leap(2005))
+
+Ожидаемый вывод:
+{'year': <class 'int'>, 'return': <class 'bool'>}
+True
+False
+------------------------------
+

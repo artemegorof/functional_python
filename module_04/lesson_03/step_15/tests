@@ -1,0 +1,49 @@
+Тест 1:
+Входные данные:
+print(caesar_cipher.__annotations__)
+print(caesar_cipher.__doc__)
+print(caesar_cipher('lost in the echo', 1))
+
+Ожидаемый вывод:
+{'phrase': <class 'str'>, 'key': <class 'int'>, 'return': <class 'str'>}
+Шифр Цезаря
+mptu jo uif fdip
+------------------------------
+
+Тест 2:
+Входные данные:
+print(caesar_cipher.__annotations__)
+print(caesar_cipher.__doc__)
+print(caesar_cipher('from the inside', 10))
+
+Ожидаемый вывод:
+{'phrase': <class 'str'>, 'key': <class 'int'>, 'return': <class 'str'>}
+Шифр Цезаря
+pbyw dro sxcsno
+------------------------------
+
+Тест 3:
+Входные данные:
+print(caesar_cipher('leave out all the rest', -4))
+
+
+Ожидаемый вывод:
+hawra kqp whh pda naop
+------------------------------
+
+Тест 4:
+Входные данные:
+print(caesar_cipher('one more light', -3))
+
+Ожидаемый вывод:
+lkb jlob ifdeq
+------------------------------
+
+Тест 5:
+Входные данные:
+print(caesar_cipher('lost in the echo', -120))
+
+Ожидаемый вывод:
+vycd sx dro omry
+------------------------------
+

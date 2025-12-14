@@ -1,0 +1,21 @@
+Тест 1:
+Входные данные:
+print(repeat_phrase_n_times.__annotations__)
+
+Ожидаемый вывод:
+{'phrase': <class 'str'>, 'n': <class 'int'>, 'return': None}
+------------------------------
+
+Тест 2:
+Входные данные:
+repeat_phrase_n_times('Белье надевают под одежду', 4)
+print(repeat_phrase_n_times.__annotations__)
+
+Ожидаемый вывод:
+Белье надевают под одежду
+Белье надевают под одежду
+Белье надевают под одежду
+Белье надевают под одежду
+{'phrase': <class 'str'>, 'n': <class 'int'>, 'return': None}
+------------------------------
+

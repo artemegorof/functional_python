@@ -1,0 +1,60 @@
+Тест 1:
+Входные данные:
+for chunk in chunker(range(25), 4):
+    print(list(chunk))
+
+Ожидаемый вывод:
+[0, 1, 2, 3]
+[4, 5, 6, 7]
+[8, 9, 10, 11]
+[12, 13, 14, 15]
+[16, 17, 18, 19]
+[20, 21, 22, 23]
+[24]
+------------------------------
+
+Тест 2:
+Входные данные:
+for chunk in chunker(range(56), 9):
+    print(list(chunk))
+
+Ожидаемый вывод:
+[0, 1, 2, 3, 4, 5, 6, 7, 8]
+[9, 10, 11, 12, 13, 14, 15, 16, 17]
+[18, 19, 20, 21, 22, 23, 24, 25, 26]
+[27, 28, 29, 30, 31, 32, 33, 34, 35]
+[36, 37, 38, 39, 40, 41, 42, 43, 44]
+[45, 46, 47, 48, 49, 50, 51, 52, 53]
+[54, 55]
+------------------------------
+
+Тест 3:
+Входные данные:
+text = '''Python 3.12 is the latest stable release of the Python programming language, with a mix of changes to the language and the standard library.'''
+
+for chunk in chunker(text, 7):
+    print(chunk)
+
+Ожидаемый вывод:
+Python 
+3.12 is
+ the la
+test st
+able re
+lease o
+f the P
+ython p
+rogramm
+ing lan
+guage, 
+with a 
+mix of 
+changes
+ to the
+ langua
+ge and 
+the sta
+ndard l
+ibrary.
+------------------------------
+

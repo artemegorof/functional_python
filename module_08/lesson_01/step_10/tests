@@ -1,0 +1,49 @@
+Тест 1:
+Входные данные:
+g = alphabet()
+letter, word = next(g)
+print(letter, word)
+print(next(g))
+print(next(g))
+
+
+Ожидаемый вывод:
+a apple
+('b', 'banana')
+('c', 'cat')
+------------------------------
+
+Тест 2:
+Входные данные:
+for letter, word in alphabet():
+    print(letter, word)
+
+Ожидаемый вывод:
+a apple
+b banana
+c cat
+d dog
+e elephant
+f fox
+g gorilla
+h hippo
+i iguana
+j jaguar
+k koala
+l llama
+m monkey
+n newt
+o octopus
+p parrot
+q quail
+r rabbit
+s squirrel
+t tiger
+u unicorn
+v viper
+w walrus
+x xenomorph
+y yak
+z zebra
+------------------------------
+

@@ -1,0 +1,55 @@
+Тест 1:
+Входные данные:
+def square(num):
+    return num ** 2
+
+def inc(num):
+    return num + 1
+
+def dec(num):
+    return num - 1
+
+print(compute([square, inc, dec], 10))
+
+Ожидаемый вывод:
+[100, 11, 9]
+------------------------------
+
+Тест 2:
+Входные данные:
+def square(num):
+    return num ** 2
+
+def inc(num):
+    return num + 1
+
+def dec(num):
+    return num - 1
+
+print(compute([inc, dec, square], 10, 20, 30, 40))
+
+Ожидаемый вывод:
+[11, 21, 31, 41, 9, 19, 29, 39, 100, 400, 900, 1600]
+------------------------------
+
+Тест 3:
+Входные данные:
+def inc(num):
+    return num + 1
+
+def dec(num):
+    return num - 1
+
+def repeater(value, n=10):
+    return str(value) * n
+
+def square(num):
+    return num ** 2
+
+print(compute([repeater, dec, inc, square], 5, 7, 0, True))
+
+Ожидаемый вывод:
+['5555555555', '7777777777', '0000000000', 'TrueTrueTrueTrueTrueTrueTrueTrueTrueTrue', 4, 6, -1, 0, 6, 8, 1, 2, 25, 49, 0, 1]
+
+------------------------------
+

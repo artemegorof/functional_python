@@ -1,0 +1,26 @@
+Тест 1:
+Входные данные:
+def is_even(num):
+    return num % 2 == 0
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = filter_list(is_even, numbers) # берем только четные
+print(even_numbers)
+
+Ожидаемый вывод:
+[2, 4, 6, 8, 10]
+------------------------------
+
+Тест 2:
+Входные данные:
+def is_positive(num):
+    return num > 0
+
+numbers = [-1, 2, -3, 4, 5, -6, 7, -8, -9, 10]
+positive_numbers = filter_list(is_positive, numbers) # берем только положительные
+print(positive_numbers)
+
+Ожидаемый вывод:
+[2, 4, 5, 7, 10]
+------------------------------
+

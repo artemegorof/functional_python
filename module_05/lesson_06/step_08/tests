@@ -1,0 +1,17 @@
+Тест 1:
+Входные данные:
+print(get_extensions(["foo.txt", "bar.mp4", "python3"]))
+
+
+Ожидаемый вывод:
+['txt', 'mp4', '']
+------------------------------
+
+Тест 2:
+Входные данные:
+print(get_extensions(["my_proga.py", "vacation.jpeg", "crash.png", "zoomer.mp4"]))
+
+Ожидаемый вывод:
+['py', 'jpeg', 'png', 'mp4']
+------------------------------
+

@@ -1,0 +1,36 @@
+Тест 1:
+Входные данные:
+def print_goods(lst):
+    pass
+
+print_goods.is_working = False
+print_goods.status = 'Not ready'
+
+print(check_exist_attrs(print_goods, ['is_working', 'status', 'time', 'speed']))
+
+Ожидаемый вывод:
+{'is_working': True, 'status': True, 'time': False, 'speed': False}
+------------------------------
+
+Тест 2:
+Входные данные:
+def print_goods(lst):
+    pass
+
+print(check_exist_attrs(print_goods, ['tail', 'append', 'time', 'speed']))
+
+Ожидаемый вывод:
+{'tail': False, 'append': False, 'time': False, 'speed': False}
+
+------------------------------
+
+Тест 3:
+Входные данные:
+print(check_exist_attrs(list, ['sort', 'append', 'pop', 'extend']))
+
+
+Ожидаемый вывод:
+{'sort': True, 'append': True, 'pop': True, 'extend': True}
+
+------------------------------
+

@@ -1,0 +1,29 @@
+Тест 1:
+Входные данные:
+def print_goods(lst):
+    pass
+
+create_attrs(print_goods, [('house', 1), ('level', 3), ('cost', 1000000)])
+print(print_goods.house)
+print(print_goods.level)
+print(print_goods.cost)
+
+Ожидаемый вывод:
+1
+3
+1000000
+------------------------------
+
+Тест 2:
+Входные данные:
+def print_goods(lst):
+    pass
+
+create_attrs(print_goods, [('is_working', False), ('days', 10), ('status', 'Not ready')])
+
+print(check_exist_attrs(print_goods, ['sort', 'is_working', 'days', 'status', 'upper']))
+
+Ожидаемый вывод:
+{'sort': False, 'is_working': True, 'days': True, 'status': True, 'upper': False}
+------------------------------
+

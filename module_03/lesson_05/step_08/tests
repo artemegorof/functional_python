@@ -1,0 +1,62 @@
+Тест 1:
+Входные данные:
+words = ['Hello', 'world!']
+words_length(words)
+print(words)
+
+Ожидаемый вывод:
+[5, 6]
+------------------------------
+
+Тест 2:
+Входные данные:
+words = ['Python', 'is', 'awesome!']
+words_length(words)
+print(words)
+
+Ожидаемый вывод:
+[6, 2, 8]
+------------------------------
+
+Тест 3:
+Входные данные:
+words = ['Python', 'is', 'awesome!']
+result = words_length(words)
+print(words)
+print(result)
+
+Ожидаемый вывод:
+[6, 2, 8]
+None
+------------------------------
+
+Тест 4:
+Входные данные:
+words = ['Python', 'is', 'awesome!']
+words = words_length(words)
+print(words)
+
+Ожидаемый вывод:
+None
+------------------------------
+
+Тест 5:
+Входные данные:
+words = ['You', 'should', 'learn', 'it!']
+words_length(words)
+print(words)
+
+Ожидаемый вывод:
+[3, 6, 5, 3]
+------------------------------
+
+Тест 6:
+Входные данные:
+words = ['attractive', 'world', 'cool', 'chief', 'faithful', 'cause', 'plagiarize']
+words_length(words)
+print(words)
+
+Ожидаемый вывод:
+[10, 5, 4, 5, 8, 5, 10]
+------------------------------
+

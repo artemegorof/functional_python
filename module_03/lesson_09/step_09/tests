@@ -1,0 +1,62 @@
+Тест 1:
+Входные данные:
+tables = {
+    1: {'name': 'Andrey', 'is_vip': True, 'order': {}},
+    2: None,
+    3: None,
+    4: None,
+    5: {'name': 'Vasiliy', 'is_vip': False, 'order': {}},
+}
+
+make_order(1, soup='Borsh')
+make_order(1, desert='Наполеон', drink='Чай')
+print(tables)
+
+Ожидаемый вывод:
+{1: {'name': 'Andrey', 'is_vip': True, 'order': {'soup': 'Borsh', 'desert': 'Наполеон', 'drink': 'Чай'}}, 2: None, 3: None, 4: None, 5: {'name': 'Vasiliy', 'is_vip': False, 'order': {}}}
+
+------------------------------
+
+Тест 2:
+Входные данные:
+tables = {
+    1: {'name': 'Andrey', 'is_vip': True, 'order': {}},
+    2: None,
+    3: None,
+    4: None,
+    5: {'name': 'Vasiliy', 'is_vip': False, 'order': {}},
+}
+
+make_order(1, soup='Borsh')
+make_order(1, desert='Наполеон', drink='Чай')
+make_order(1, desert='Медовик', drink='Кофе')
+print(tables)
+
+Ожидаемый вывод:
+{1: {'name': 'Andrey', 'is_vip': True, 'order': {'soup': 'Borsh', 'desert': 'Медовик', 'drink': 'Кофе'}}, 2: None, 3: None, 4: None, 5: {'name': 'Vasiliy', 'is_vip': False, 'order': {}}}
+------------------------------
+
+Тест 3:
+Входные данные:
+tables = {
+    1: {'name': 'Andrey', 'is_vip': True, 'order': {}},
+    2: None,
+    3: None,
+    4: None,
+    5: {'name': 'Vasiliy', 'is_vip': False, 'order': {}},
+}
+make_order(1, soup='Borsh')
+make_order(1, soup='Лапша', bring='Салфетку', meal='Манка')
+
+reserve_table(2, 'Vlad')
+
+make_order(2, soup='Чечевичный', salad='Цезарь', breakfast='Яичница')
+make_order(2, drink='Raf', main_dish='Утка по-пекински')
+make_order(2, desert='Трюфель', call='такси')
+print(tables)
+
+Ожидаемый вывод:
+{1: {'name': 'Andrey', 'is_vip': True, 'order': {'soup': 'Лапша'}}, 2: {'name': 'Vlad', 'is_vip': False, 'order': {'soup': 'Чечевичный', 'salad': 'Цезарь', 'drink': 'Raf', 'main_dish': 'Утка по-пекински', 'desert': 'Трюфель'}}, 3: None, 4: None, 5: {'name': 'Vasiliy', 'is_vip': False, 'order': {}}}
+
+------------------------------
+

@@ -1,0 +1,48 @@
+Тест 1:
+Входные данные:
+appendix expose ensure salon north
+
+Ожидаемый вывод:
+False
+------------------------------
+
+Тест 2:
+Входные данные:
+food forethought muscle stadium
+
+Ожидаемый вывод:
+True
+------------------------------
+
+Тест 3:
+Входные данные:
+established negative THOUGHT pan infect insure
+
+Ожидаемый вывод:
+True
+------------------------------
+
+Тест 4:
+Входные данные:
+grimace souGht traction delicate drOUght
+
+Ожидаемый вывод:
+True
+------------------------------
+
+Тест 5:
+Входные данные:
+workshop paralyzed chord tool award protect
+
+Ожидаемый вывод:
+False
+------------------------------
+
+Тест 6:
+Входные данные:
+drOUghtisbad souGhtarewe
+
+Ожидаемый вывод:
+False
+------------------------------
+

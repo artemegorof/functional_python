@@ -1,0 +1,34 @@
+Тест 1:
+Входные данные:
+chase enlarge referee cup offense
+
+
+Ожидаемый вывод:
+False
+
+------------------------------
+
+Тест 2:
+Входные данные:
+acquaintance disAgree
+
+Ожидаемый вывод:
+True
+------------------------------
+
+Тест 3:
+Входные данные:
+business plagiarize metal muscle spontaneous film year transport parallel ice
+
+Ожидаемый вывод:
+False
+------------------------------
+
+Тест 4:
+Входные данные:
+DREAM photography VARIETY palm award
+
+Ожидаемый вывод:
+True
+------------------------------
+
